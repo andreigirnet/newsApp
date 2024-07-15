@@ -151,7 +151,7 @@ class NewsController extends Controller
             $sitemapContent = File::get($sitemapPath);
 
             // Find and remove the URL from the sitemap content
-            $pattern = "<url><loc>{$newsUrl}</loc></url>";
+            $pattern = "<url><loc>{$newsUrl}</loc>";
             $pos = strpos($sitemapContent, $pattern);
 
             if ($pos !== false) {
