@@ -34,7 +34,7 @@
             <div class="col-lg-6 col-md-4">
                 <div class="b-ads">
                     <a href="/">
-                        <img src="{{asset('assets/img/ads-1.jpg')}}" alt="Ads">
+{{--                        <img src="{{asset('assets/img/ads-1.jpg')}}" alt="Ads">--}}
                     </a>
                 </div>
             </div>
