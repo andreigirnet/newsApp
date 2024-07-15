@@ -19,10 +19,10 @@ Route::get('/', function () {
         ->orderBy('created_at', 'desc')
         ->take(9)
         ->get();
-    $sports = News::where('category_id', 7)->latest()->take(4)->get();
-    $politics =  News::where('category_id', 1)->latest()->take(4)->get();
-    $socials = News::where('category_id', 10)->latest()->take(4)->get();
-    $militars = News::where('category_id', 11)->latest()->take(4)->get();
+    $sports = News::where('category_id', 4)->latest()->take(4)->get();
+    $politics =  News::where('category_id', 5)->latest()->take(4)->get();
+    $socials = News::where('category_id', 8)->latest()->take(4)->get();
+    $militars = News::where('category_id', 3)->latest()->take(4)->get();
     return view('front.home', compact('firstBannerNews', 'rightBanners', 'sports', 'politics', 'socials', 'militars', 'footerNews'));
 });
 

@@ -23,6 +23,7 @@
     <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('assets/css/pagination.css')}}" />
 
+
     <meta name="google-site-verification" content="tnbRsy03S4_f3BOYVKh_shJ2Yj--0lJNcy3px_tx6xI" />
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9112272212670993"
@@ -44,5 +45,48 @@
 
 <!-- Template Javascript -->
 <script src="{{asset('assets/js/main.js')}}"></script>
+
+<script type="importmap">
+    {
+        "imports": {
+            "ckeditor5": "https://cdn.ckeditor.com/ckeditor5/42.0.1/ckeditor5.js",
+            "ckeditor5/": "https://cdn.ckeditor.com/ckeditor5/42.0.1/"
+        }
+    }
+</script>
+<script type="module">
+    import {
+        ClassicEditor,
+        Essentials,
+        Paragraph,
+        Bold,
+        Italic,
+        Font
+    } from 'ckeditor5';
+
+    ClassicEditor
+        .create( document.querySelector( '#editor' ), {
+            plugins: [ Essentials, Paragraph, Bold, Italic, Font ],
+            toolbar: [
+                'undo', 'redo', '|', 'bold', 'italic', '|',
+                'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor'
+            ]
+        } )
+        .then( editor => {
+            window.editor = editor;
+        } )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
+<!-- A friendly reminder to run on a server, remove this during the integration. -->
+<script>
+    window.onload = function() {
+        if ( window.location.protocol === "file:" ) {
+            alert( "This sample requires an HTTP server. Please serve this file with a web server." );
+        }
+    };
+</script>
+
 </body>
 </html>

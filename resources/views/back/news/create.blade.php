@@ -53,6 +53,7 @@
             </script>
             <textarea name="content" id="content">
             </textarea>
+
         </div>
         <div class="form-group">
             <input type="file" class="form-control form-control" name="image" id="defaultInput" >
