@@ -8,6 +8,7 @@ use App\Models\News;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Route;
+use Spatie\Sitemap\SitemapGenerator;
 
 Route::get('/', function () {
     SEOMeta::setTitle('Home');
@@ -64,6 +65,21 @@ Route::get('/cookies', function (){
 Route::get('/adv', function (){
     return view('front.advertise');
 })->name('adv');
+
+Route::get('/generate-sitemap', function () {
+    // Define the path where the sitemap will be saved
+    $path = public_path('sitemap.xml');
+
+    // Generate the sitemap for all routes dynamically
+    SitemapGenerator::create(config('app.url'))
+        ->hasCrawled(function (Spatie\Sitemap\Crawler\CrawlUrl $url) {
+            // Optionally filter URLs or set priority/frequency here
+            return $url;
+        })
+        ->writeToFile($path);
+
+    return 'Sitemap generated successfully!';
+});
 
 
 
