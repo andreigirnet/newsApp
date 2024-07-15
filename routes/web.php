@@ -70,13 +70,7 @@ Route::get('/generate-sitemap', function () {
     // Define the path where the sitemap will be saved
     $path = public_path('sitemap.xml');
 
-    // Generate the sitemap for all routes dynamically
-    SitemapGenerator::create(config('app.url'))
-        ->hasCrawled(function (Spatie\Sitemap\Crawler\CrawlUrl $url) {
-            // Optionally filter URLs or set priority/frequency here
-            return $url;
-        })
-        ->writeToFile($path);
+    SitemapGenerator::create(config('app.url'))->writeToFile($path);
 
     return 'Sitemap generated successfully!';
 });
