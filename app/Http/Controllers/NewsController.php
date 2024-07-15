@@ -78,7 +78,7 @@ class NewsController extends Controller
             $sitemapContent = File::get($sitemapPath);
 
             // Add the new URL to the sitemap
-            $newUrl = "<url><loc>{$newsUrl}</loc><changefreq>daily</changefreq><priority>0.8</priority></url>";
+            $newUrl = "<url><loc>{$newsUrl}</loc></url>";
             $sitemapContent = str_replace('</urlset>', $newUrl.'</urlset>', $sitemapContent);
 
             // Save the updated sitemap
