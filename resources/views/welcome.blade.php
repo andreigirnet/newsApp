@@ -22,6 +22,8 @@
     <!-- Template Stylesheet -->
     <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('assets/css/pagination.css')}}" />
+
+    <meta name="google-site-verification" content="tnbRsy03S4_f3BOYVKh_shJ2Yj--0lJNcy3px_tx6xI" />
 </head>
 
 <body>
