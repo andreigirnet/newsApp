@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use App\Models\News;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
+use Spatie\Sitemap\SitemapGenerator;
+use Spatie\Sitemap\Tags\Url;
 
 class NewsController extends Controller
 {
@@ -66,6 +69,18 @@ class NewsController extends Controller
         $news->video = $request['video'];
         $news->hot_news = (int) $request['hotNews'];
         $news->save();
+
+        $newsUrl = url("/blog/{$news->slug}");
+        $newsUrl = str_replace("http://", "https://", $newsUrl);
+        $sitemapPath = public_path('sitemap.xml');
+
+        if (File::exists($sitemapPath)) {
+            SitemapGenerator::create(config('app.url'))
+                ->getSitemap()
+                // here we add one extra link, but you can add as many as you'd like
+                ->add(Url::create($newsUrl)->setPriority(0.5))
+                ->writeToFile($sitemapPath);
+        }
 
         // Redirect back with a success message
         return redirect('/news')->with('success', 'News created successfully!');
