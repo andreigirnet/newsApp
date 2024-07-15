@@ -141,7 +141,32 @@ class NewsController extends Controller
      */
     public function destroy(News $news)
     {
+        $newsUrl = url("/blog/{$news->slug}");
+
         $news->delete();
+
+        $sitemapPath = public_path('sitemap.xml');
+
+        if (File::exists($sitemapPath)) {
+            $sitemapContent = File::get($sitemapPath);
+
+            // Find and remove the URL from the sitemap content
+            $pattern = "<url><loc>{$newsUrl}</loc></url>";
+            $pos = strpos($sitemapContent, $pattern);
+
+            if ($pos !== false) {
+                // Find the end of the <url> entry
+                $endPos = strpos($sitemapContent, '</url>', $pos);
+                if ($endPos !== false) {
+                    // Remove the entire <url> entry from $sitemapContent
+                    $sitemapContent = substr_replace($sitemapContent, '', $pos, $endPos - $pos + strlen('</url>'));
+                }
+            }
+
+            // Save the updated sitemap
+            File::put($sitemapPath, $sitemapContent);
+        }
+
         return redirect()->back()->with('success', "News Deleted");
     }
 }
