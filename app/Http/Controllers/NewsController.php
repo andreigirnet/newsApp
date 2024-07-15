@@ -75,11 +75,14 @@ class NewsController extends Controller
         $sitemapPath = public_path('sitemap.xml');
 
         if (File::exists($sitemapPath)) {
-            SitemapGenerator::create(config('app.url'))
-                ->getSitemap()
-                // here we add one extra link, but you can add as many as you'd like
-                ->add(Url::create($newsUrl)->setPriority(0.5))
-                ->writeToFile($sitemapPath);
+            $sitemapContent = File::get($sitemapPath);
+
+            // Add the new URL to the sitemap
+            $newUrl = "<url><loc>{$newsUrl}</loc><changefreq>daily</changefreq><priority>0.8</priority></url>";
+            $sitemapContent = str_replace('</urlset>', $newUrl.'</urlset>', $sitemapContent);
+
+            // Save the updated sitemap
+            File::put($sitemapPath, $sitemapContent);
         }
 
         // Redirect back with a success message

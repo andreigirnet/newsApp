@@ -24,13 +24,30 @@ class CategoryController extends Controller
         return view('back.category.create');
     }
 
+    public function formatSlug($title){
+
+        $title = strtolower($title);
+
+        $slug = str_replace(' ', '-', $title);
+
+        $slug = preg_replace('/[^a-z0-9-]/', '', $slug);
+
+        $slug = preg_replace('/-+/', '-', $slug);
+
+        return trim($slug, '-');
+    }
+
     /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
     {
+        $title = $request['title'];
+        $slug = $this->formatSlug($title);
+
         $category = new Category();
         $category->title = $request->title;
+        $category->slug = $slug;
         $category->save();
         return redirect(route('category.index'))->with('success','Category stored successfully');
     }

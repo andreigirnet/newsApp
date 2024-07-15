@@ -26,7 +26,7 @@ Route::get('/', function () {
     return view('front.home', compact('firstBannerNews', 'rightBanners', 'sports', 'politics', 'socials', 'militars', 'footerNews'));
 });
 
-Route::get('/category/{id}', function ($id) {
+Route::get('/singleCategory/{id}', function ($id) {
    $newsByCategory = News::where('category_id', $id)->latest()->paginate(10);
    $category = Category::find($id);
     SEOMeta::setTitle($category->title);
@@ -34,7 +34,7 @@ Route::get('/category/{id}', function ($id) {
    return view('front.category', compact('newsByCategory','category'));
 })->name('byCategory');
 
-Route::get('/single/{slug}', function ($slug) {
+Route::get('/singleNews/{slug}', function ($slug) {
     $news = News::where('slug', $slug)->first();
     SEOMeta::setTitle($news->title);
     SEOMeta::setDescription($news->title);
