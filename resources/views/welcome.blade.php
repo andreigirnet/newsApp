@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="{{asset('assets/css/pagination.css')}}" />
 
     <meta name="google-site-verification" content="tnbRsy03S4_f3BOYVKh_shJ2Yj--0lJNcy3px_tx6xI" />
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9112272212670993"
+            crossorigin="anonymous"></script>
 </head>
 
 <body>
