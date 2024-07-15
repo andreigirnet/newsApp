@@ -69,9 +69,9 @@
                             @endforeach
                         </div>
                     </div>
-                    <a href="{{route('byCategory', 11)}}" class="nav-item nav-link">Război</a>
-                    <a href="{{route('byCategory', 1)}}" class="nav-item nav-link">Alegeri</a>
-                    <a href="{{route('byCategory', 7)}}" class="nav-item nav-link">Euro 2024</a>
+                    <a href="{{route('byCategory', 3)}}" class="nav-item nav-link">Military</a>
+                    <a href="{{route('byCategory', 5)}}" class="nav-item nav-link">Elections</a>
+                    <a href="{{route('byCategory', 4)}}" class="nav-item nav-link">Sports</a>
                 </div>
                 <div class="social ml-auto">
                     <a href=""><i class="fab fa-twitter"></i></a>

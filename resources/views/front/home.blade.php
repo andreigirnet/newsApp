@@ -65,7 +65,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <a href="{{route('byCategory', 1)}}"><h2>Politic</h2></a>
+                    <a href="{{route('byCategory', 1)}}"><h2>Politics</h2></a>
                     <div class="row cn-slider">
                         @foreach($politics as $politic)
                             <div class="col-md-6">
@@ -108,7 +108,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <a href="{{route('byCategory', 11)}}"><h2>Militar</h2></a>
+                    <a href="{{route('byCategory', 11)}}"><h2>Military</h2></a>
                     <div class="row cn-slider">
                         @foreach($militars as $militar)
                             <div class="col-md-6">
