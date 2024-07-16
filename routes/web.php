@@ -41,7 +41,16 @@ Route::get('/singleNews/{slug}', function ($slug) {
     $news = News::where('slug', $slug)->first();
     SEOMeta::setTitle($news->title);
     SEOMeta::setDescription($news->title);
-    OpenGraph::addImage(config('app.url') . 'storage/'  . $news->photo, ['height' => 300, 'width' => 300]);
+
+    OpenGraph::setTitle($news->title);
+    OpenGraph::setDescription($news->description);
+    OpenGraph::setUrl(route('singleNews', $slug));
+    OpenGraph::addProperty('type', 'article');
+    OpenGraph::addProperty('article:published_time', $news->created_at->toW3CString());
+    OpenGraph::addProperty('article:modified_time', $news->updated_at->toW3CString());
+    OpenGraph::addProperty('article:author', "Hype-News");
+    OpenGraph::addImage(config('app.url') . '/storage/' . $news->photo, ['height' => 300, 'width' => 300]);
+
     $inThisCategory = News::where('category_id', $news->category_id)->latest()->take(4)->get();
     $hotNews = News::where('hot_news', 1)->latest()->take(4)->get();
     $categories = Category::latest()->take(6)->get();
