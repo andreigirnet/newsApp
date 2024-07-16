@@ -18,7 +18,7 @@
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">{{ $news->title }}</h5>
                             <p class="card-text">{{ Str::limit($news->description, 100) }}</p>
-                            <a href="{{ route('singleNews', $news->id) }}" class="btn btn-primary mt-auto">Detalii</a>
+                            <a href="{{ route('singleNews', $news->slug) }}" class="btn btn-primary mt-auto">Detalii</a>
                         </div>
                     </div>
                 </div>
