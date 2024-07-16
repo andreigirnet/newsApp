@@ -15,7 +15,7 @@ use Spatie\Sitemap\SitemapGenerator;
 Route::get('/', function () {
     SEOMeta::setTitle('Home');
     SEOMeta::setDescription('Latest news all over the world');
-    OpenGraph::addImage(config('app.url') . '/assets/img/icon.png');
+    OpenGraph::addImage(config('app.url') . 'assets/img/icon.png');
     $firstBannerNews = News::latest()->take(2)->get();
     $rightBanners = News::latest()->take(4)->get();
     $footerNews = News::where('created_at', '>=', Carbon::now()->subWeek())
