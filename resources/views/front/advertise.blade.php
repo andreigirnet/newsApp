@@ -25,7 +25,7 @@
                 </ul>
                 <h2>Contact</h2>
                 <p>
-                    For more information about our advertising options, rates, and to discuss a customized collaboration, please contact us at the following email address: [email address].
+                    For more information about our advertising options, rates, and to discuss a customized collaboration, please contact us at the following email address: info@hype-news.eu.
                 </p>
                 <p>
                     We are here to help you achieve your marketing goals and connect with the right audience. We look forward to collaborating with you!
