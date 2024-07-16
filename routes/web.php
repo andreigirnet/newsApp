@@ -40,7 +40,7 @@ Route::get('/singleNews/{slug}', function ($slug) {
     $news = News::where('slug', $slug)->first();
     SEOMeta::setTitle($news->title);
     SEOMeta::setDescription($news->title);
-    OpenGraph::addImage(config('app.url') . '/' . $news->photo);
+    OpenGraph::addImage(config('app.url')  . $news->photo);
     $inThisCategory = News::where('category_id', $news->category_id)->latest()->take(4)->get();
     $hotNews = News::where('hot_news', 1)->latest()->take(4)->get();
     $categories = Category::latest()->take(6)->get();
