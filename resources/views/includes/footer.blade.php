@@ -7,7 +7,7 @@
                     <h3 class="title">Get in Touch</h3>
                     <div class="contact-info">
 {{--                        <p><i class="fa fa-map-marker"></i>123 News Street, NY, USA</p>--}}
-                        <p><i class="fa fa-envelope"></i>info@example.com</p>
+                        <p><i class="fa fa-envelope"></i>info@hype-news.eu</p>
                         <p><i class="fa fa-phone"></i>+123-456-7890</p>
                         <div class="social">
                             <a href=""><i class="fab fa-twitter"></i></a>
