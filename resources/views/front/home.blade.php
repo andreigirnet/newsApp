@@ -152,7 +152,7 @@
                             <div class="tn-news">
                                 <div class="tn-img">
                                     @if($rightBanner->photo)
-                                    <img src="{{ asset('storage/' . $rightBanner->photo) }}"  alt="{{ $rightBanner->title }}" />
+                                    <img src="{{ asset('storage/' . $rightBanner->photo) }}" class="featuredImage"  alt="{{ $rightBanner->title }}" />
                                     @endif
                                 </div>
                                 <div class="tn-title">
@@ -166,8 +166,9 @@
                                 <div class="tn-news">
                                     <div class="tn-img">
                                         @if($rightBanner->photo)
-                                            <img src="{{ asset('storage/' . $rightBanner->photo) }}" alt="{{ $rightBanner->title }}" />
-                                        @endif                                    </div>
+                                            <img src="{{ asset('storage/' . $rightBanner->photo) }}" class="featuredImage" alt="{{ $rightBanner->title }}" />
+                                        @endif
+                                    </div>
                                     <div class="tn-title">
                                         <a href="{{route('singleNews',  $rightBanner->slug)}}">{{$rightBanner->title}}</a>
                                     </div>
@@ -179,7 +180,7 @@
                                 <div class="tn-news">
                                     <div class="tn-img">
                                         @if($rightBanner->photo)
-                                            <img src="{{ asset('storage/' . $rightBanner->photo) }}" alt="{{ $rightBanner->title }}" />
+                                            <img src="{{ asset('storage/' . $rightBanner->photo) }}" class="featuredImage" alt="{{ $rightBanner->title }}" />
                                         @endif                                    </div>
                                     <div class="tn-title">
                                         <a href="{{route('singleNews',  $rightBanner->slug)}}">{{$rightBanner->title}}</a>
@@ -209,7 +210,7 @@
                                 <div class="tn-news">
                                     <div class="tn-img">
                                         @if($rightBanner->photo)
-                                            <img src="{{ asset('storage/' . $rightBanner->photo) }}" alt="{{ $rightBanner->title }}" />
+                                            <img src="{{ asset('storage/' . $rightBanner->photo) }}" class="featuredImage" alt="{{ $rightBanner->title }}" />
                                         @endif                                    </div>
                                     <div class="tn-title">
                                         <a href="{{route('singleNews',  $rightBanner->slug)}}">{{$rightBanner->title}}</a>
@@ -222,7 +223,7 @@
                                 <div class="tn-news">
                                     <div class="tn-img">
                                         @if($rightBanner->photo)
-                                            <img src="{{ asset('storage/' . $rightBanner->photo) }}" alt="{{ $rightBanner->title }}" />
+                                            <img src="{{ asset('storage/' . $rightBanner->photo) }}" class="featuredImage" alt="{{ $rightBanner->title }}" />
                                         @endif                                    </div>
                                     <div class="tn-title">
                                         <a href="{{route('singleNews',  $rightBanner->slug)}}">{{$rightBanner->title}}</a>
@@ -235,7 +236,7 @@
                                 <div class="tn-news">
                                     <div class="tn-img">
                                         @if($rightBanner->photo)
-                                            <img src="{{ asset('storage/' . $rightBanner->photo) }}" alt="{{ $rightBanner->title }}" />
+                                            <img src="{{ asset('storage/' . $rightBanner->photo) }}" class="featuredImage" alt="{{ $rightBanner->title }}" />
                                         @endif                                    </div>
                                     <div class="tn-title">
                                         <a href="{{route('singleNews',  $rightBanner->slug)}}">{{$rightBanner->title}}</a>

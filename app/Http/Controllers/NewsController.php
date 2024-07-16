@@ -112,7 +112,6 @@ class NewsController extends Controller
     public function update(Request $request, $id)
     {
         // Validate the incoming request data
-
         // Handle the file upload if there is an image
         if ($request->hasFile('image')) {
             $imagePath = $request->file('image')->store('images', 'public');

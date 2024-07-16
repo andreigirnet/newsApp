@@ -22,7 +22,7 @@
             </li>
         </ul>
     </div>
-    <form action="/news/{{$news->id}}" method="POST">
+    <form action="/news/{{$news->id}}" method="POST" enctype="multipart/form-data">
         @method('PUT')
         @csrf
         <div class="form-group form-group">
