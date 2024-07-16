@@ -4,26 +4,26 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="sn-container">
-                    <h1 class="sn-title" style="margin-top: 20px">Despre Noi</h1>
+                    <h1 class="sn-title" style="margin-top: 20px">About Us</h1>
                 </div>
             </div>
         </div>
         <div class="row mb-4">
             <div class="col-lg-8">
                 <p>
-                    Bine ați venit pe site-ul nostru! Ne angajăm să vă oferim cele mai recente știri și actualizări din întreaga lume. Misiunea noastră este de a livra știri precise, imparțiale și la timp pentru a vă ține informat despre evenimentele care modelează lumea noastră.
+                    Welcome to our website! We are committed to bringing you the latest news and updates from around the world. Our mission is to deliver accurate, impartial, and timely news to keep you informed about the events shaping our world.
                 </p>
                 <p>
-                    Echipa noastră de jurnaliști și redactori dedicați lucrează neobosit pentru a vă aduce analize aprofundate, comentarii perspicace și acoperire cuprinzătoare a unei game largi de subiecte, inclusiv politică, afaceri, tehnologie, sport, divertisment și multe altele.
+                    Our team of dedicated journalists and editors works tirelessly to bring you in-depth analyses, insightful commentary, and comprehensive coverage of a wide range of topics, including politics, business, technology, sports, entertainment, and much more.
                 </p>
                 <p>
-                    Credem în puterea jurnalismului de a face o diferență și suntem pasionați de rolul nostru în peisajul media. Obiectivul nostru este de a încuraja un public bine informat și de a oferi o platformă pentru voci și perspective diverse.
+                    We believe in the power of journalism to make a difference and are passionate about our role in the media landscape. Our goal is to foster a well-informed audience and provide a platform for diverse voices and perspectives.
                 </p>
                 <p>
-                    Vă mulțumim că ați vizitat site-ul nostru. Apreciem sprijinul dumneavoastră și așteptăm cu nerăbdare să vă oferim cele mai bune știri și informații.
+                    Thank you for visiting our website. We appreciate your support and look forward to providing you with the best news and information.
                 </p>
                 <p>
-                    Dacă aveți întrebări, feedback sau sugestii, vă rugăm să ne contactați. Valorăm opinia dumneavoastră și căutăm mereu modalități de a ne îmbunătăți serviciile.
+                    If you have any questions, feedback, or suggestions, please contact us. We value your opinion and are always looking for ways to improve our services.
                 </p>
             </div>
         </div>

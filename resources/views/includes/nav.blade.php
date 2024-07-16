@@ -62,7 +62,7 @@
                 <div class="navbar-nav mr-auto">
                     <a href="/" class="nav-item nav-link active">Home</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Categorii</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Categories</a>
                         <div class="dropdown-menu">
                             @foreach(App\Models\Category::all() as $category)
                                 <a href="{{route('byCategory', $category->id)}}" class="dropdown-item">{{$category->title}}</a>

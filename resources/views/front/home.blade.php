@@ -54,7 +54,7 @@
                         <div class="col-md-6">
                             <div class="cn-img">
                                 @if($sport->photo)
-                                    <img src="{{ asset('storage/' . $sport->photo) }}" alt="{{ $sport->title }}" />
+                                    <img src="{{ asset('storage/' . $sport->photo) }}" class="middleNewsHome" alt="{{ $sport->title }}" />
                                 @endif
                                 <div class="cn-title">
                                     <a href="{{route('singleNews',  $sport->slug)}}">{{ $sport->title }}</a>
@@ -71,7 +71,7 @@
                             <div class="col-md-6">
                                 <div class="cn-img">
                                     @if($politic->photo)
-                                        <img src="{{ asset('storage/' . $politic->photo) }}" alt="{{ $politic->title }}" />
+                                        <img src="{{ asset('storage/' . $politic->photo) }}" class="middleNewsHome" alt="{{ $politic->title }}" />
                                     @endif
                                     <div class="cn-title">
                                         <a href="{{route('singleNews',  $politic->slug)}}">{{ $politic->title }}</a>
@@ -97,7 +97,7 @@
                             <div class="col-md-6">
                                 <div class="cn-img">
                                     @if($social->photo)
-                                        <img src="{{ asset('storage/' . $social->photo) }}" alt="{{ $social->title }}" />
+                                        <img src="{{ asset('storage/' . $social->photo) }}" class="middleNewsHome" alt="{{ $social->title }}" />
                                     @endif
                                     <div class="cn-title">
                                         <a href="{{route('singleNews',  $social->slug)}}">{{ $social->title }}</a>
@@ -114,7 +114,7 @@
                             <div class="col-md-6">
                                 <div class="cn-img">
                                     @if($militar->photo)
-                                        <img src="{{ asset('storage/' . $militar->photo) }}" alt="{{ $militar->title }}" />
+                                        <img src="{{ asset('storage/' . $militar->photo) }}" class="middleNewsHome" alt="{{ $militar->title }}" />
                                     @endif
                                     <div class="cn-title">
                                         <a href="{{route('singleNews',  $militar->slug)}}">{{ $militar->title }}</a>
@@ -152,7 +152,7 @@
                             <div class="tn-news">
                                 <div class="tn-img">
                                     @if($rightBanner->photo)
-                                    <img src="{{ asset('storage/' . $rightBanner->photo) }}" alt="{{ $rightBanner->title }}" />
+                                    <img src="{{ asset('storage/' . $rightBanner->photo) }}"  alt="{{ $rightBanner->title }}" />
                                     @endif
                                 </div>
                                 <div class="tn-title">
@@ -260,7 +260,7 @@
                         <div class="col-md-4">
                             <div class="mn-img">
                                 @if($footerNew->photo)
-                                    <img src="{{ asset('storage/' . $footerNew->photo) }}" alt="{{ $footerNew->title }}" />
+                                    <img src="{{ asset('storage/' . $footerNew->photo) }}" class="middleNewsHome" alt="{{ $footerNew->title }}" />
                                 @endif
                                 <div class="mn-title">
                                     <a href="{{route('singleNews',  $footerNew->slug)}}">{{ $footerNew->title }}</a>

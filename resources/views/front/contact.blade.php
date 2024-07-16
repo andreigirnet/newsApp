@@ -40,8 +40,8 @@
                     <div class="contact-info">
                         <h3>Get in Touch</h3>
                         <p>
-                            Echipa noastră de jurnaliști și redactori dedicați lucrează neobosit pentru a vă aduce analize aprofundate, comentarii perspicace și acoperire cuprinzătoare a unei game largi de subiecte, inclusiv politică, afaceri, tehnologie, sport, divertisment și multe altele.
-                        </p>
+
+                            Our team of dedicated journalists and editors works tirelessly to bring you in-depth analyses, insightful commentary, and comprehensive coverage of a wide range of topics, including politics, business, technology, sports, entertainment, and much more.                        </p>
 {{--                        <h4><i class="fa fa-map-marker"></i>123 News Street, NY, USA</h4>--}}
                         <h4><i class="fa fa-envelope"></i>info@example.com</h4>
                         <h4><i class="fa fa-phone"></i>+123-456-7890</h4>

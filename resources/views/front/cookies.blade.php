@@ -4,34 +4,34 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="sn-container">
-                    <h1 class="sn-title" style="margin-top: 20px">Politica de Cookie-uri</h1>
+                    <h1 class="sn-title" style="margin-top: 20px">Cookie Policy</h1>
                 </div>
             </div>
         </div>
         <div class="row mb-4">
             <div class="col-lg-8">
                 <p>
-                    Acest site utilizează cookie-uri pentru a vă oferi cea mai bună experiență posibilă. Cookie-urile sunt fișiere text mici plasate pe dispozitivul dumneavoastră pentru a colecta informații despre modul în care utilizați site-ul. Aceste informații sunt utilizate pentru a îmbunătăți site-ul și a vă oferi o experiență de navigare mai personalizată.
+                    This site uses cookies to provide you with the best possible experience. Cookies are small text files placed on your device to collect information about how you use the site. This information is used to improve the site and provide you with a more personalized browsing experience.
                 </p>
-                <h2>Ce sunt Cookie-urile?</h2>
+                <h2>What are Cookies?</h2>
                 <p>
-                    Cookie-urile sunt fișiere de text utilizate de site-uri web pentru a stoca informații sau preferințe despre vizitatorii lor. Acestea pot include informații precum preferințele de limbă, istoricul navigării, setările de cont etc.
+                    Cookies are text files used by websites to store information or preferences about their visitors. These can include information such as language preferences, browsing history, account settings, etc.
                 </p>
-                <h2>Cum folosim Cookie-urile?</h2>
+                <h2>How do we use Cookies?</h2>
                 <p>
-                    Utilizăm cookie-uri pentru a înțelege cum interacționați cu site-ul nostru, pentru a îmbunătăți serviciile noastre și pentru a personaliza conținutul și reclamele. De asemenea, putem utiliza cookie-uri pentru a analiza modul în care utilizați site-ul și pentru a îmbunătăți performanța acestuia.
+                    We use cookies to understand how you interact with our site, to improve our services, and to personalize content and advertisements. We may also use cookies to analyze how you use the site and to improve its performance.
                 </p>
-                <h2>Cum puteți gestiona Cookie-urile?</h2>
+                <h2>How can you manage Cookies?</h2>
                 <p>
-                    Puteți să vă gestionați preferințele cookie-urilor în setările browser-ului dumneavoastră. Majoritatea browserelor vă permit să blocați sau să ștergeți cookie-uri. Totuși, rețineți că blocarea cookie-urilor poate afecta experiența dumneavoastră pe site-ul nostru și în alte locuri online.
+                    You can manage your cookie preferences in your browser settings. Most browsers allow you to block or delete cookies. However, please note that blocking cookies may affect your experience on our site and other places online.
                 </p>
-                <h2>Modificări ale Politicii de Cookie-uri</h2>
+                <h2>Changes to the Cookie Policy</h2>
                 <p>
-                    Ne rezervăm dreptul de a actualiza sau modifica această politică de cookie-uri în orice moment. Orice modificări vor fi publicate pe această pagină, așa că vă recomandăm să o vizitați periodic pentru a fi la curent cu orice schimbări.
+                    We reserve the right to update or modify this cookie policy at any time. Any changes will be posted on this page, so we recommend that you visit it periodically to stay informed about any updates.
                 </p>
                 <h2>Contact</h2>
                 <p>
-                    Dacă aveți întrebări sau preocupări cu privire la utilizarea cookie-urilor pe acest site, vă rugăm să ne contactați la adresa de e-mail: [adresa de e-mail].
+                    If you have any questions or concerns about the use of cookies on this site, please contact us at the following email address: [email address].
                 </p>
             </div>
         </div>

@@ -4,34 +4,34 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="sn-container">
-                    <h1 class="sn-title" style="margin-top: 20px">Termeni și Condiții</h1>
+                    <h1 class="sn-title" style="margin-top: 20px">Terms and Conditions</h1>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-8">
                 <p>
-                    Bine ați venit la site-ul nostru. Accesul și utilizarea acestui site sunt supuse următoarelor termeni și condiții și legilor în vigoare. Utilizând acest site, sunteți de acord să respectați și să fiți obligat de acești termeni și condiții.
+                    Welcome to our website. Access to and use of this site are subject to the following terms and conditions and applicable laws. By using this site, you agree to comply with and be bound by these terms and conditions.
                 </p>
-                <h2>Drepturi de Proprietate Intelectuală</h2>
+                <h2>Intellectual Property Rights</h2>
                 <p>
-                    Conținutul și materialele afișate pe acest site, inclusiv dar fără a se limita la texte, imagini, grafice, video-uri, software și alte materiale ("Conținutul"), sunt protejate de drepturile de proprietate intelectuală și aparțin proprietarului site-ului sau altor terți licențiatori.
+                    The content and materials displayed on this site, including but not limited to text, images, graphics, videos, software, and other materials ("Content"), are protected by intellectual property rights and belong to the site owner or other third-party licensors.
                 </p>
-                <h2>Utilizarea Site-ului</h2>
+                <h2>Use of the Site</h2>
                 <p>
-                    Utilizarea acestui site este permisă doar în scopuri legale și în conformitate cu acești termeni și condiții. Nu aveți voie să utilizați acest site într-un mod care ar putea încălca drepturile de proprietate intelectuală ale altora sau să perturbe sau să afecteze funcționarea acestui site.
+                    Use of this site is permitted only for lawful purposes and in accordance with these terms and conditions. You may not use this site in any manner that could infringe on the intellectual property rights of others or disrupt or interfere with the operation of this site.
                 </p>
-                <h2>Limitarea Responsabilității</h2>
+                <h2>Limitation of Liability</h2>
                 <p>
-                    Acest site și conținutul său sunt oferite "așa cum sunt" și "conform disponibilității". Nu ne asumăm responsabilitatea pentru orice daune sau pierderi cauzate de utilizarea sau imposibilitatea utilizării acestui site sau a conținutului său.
+                    This site and its content are provided "as is" and "as available." We do not assume responsibility for any damages or losses caused by the use or inability to use this site or its content.
                 </p>
-                <h2>Modificări ale Termenilor și Condițiilor</h2>
+                <h2>Changes to the Terms and Conditions</h2>
                 <p>
-                    Ne rezervăm dreptul de a actualiza sau modifica acești termeni și condiții în orice moment fără notificare prealabilă. Va fi responsabilitatea dumneavoastră să revizuiți periodic acești termeni și condiții pentru a fi la curent cu orice modificări.
+                    We reserve the right to update or modify these terms and conditions at any time without prior notice. It is your responsibility to review these terms and conditions periodically to stay informed of any changes.
                 </p>
                 <h2>Contact</h2>
                 <p>
-                    Dacă aveți întrebări sau preocupări cu privire la acești termeni și condiții, vă rugăm să ne contactați la adresa de e-mail: [adresa de e-mail].
+                    If you have any questions or concerns regarding these terms and conditions, please contact us at the following email address: [email address].
                 </p>
             </div>
         </div>
