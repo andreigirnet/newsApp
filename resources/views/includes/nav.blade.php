@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="tb-contact">
-                    <p><i class="fas fa-envelope"></i>info@mail.com</p>
+                    <p><i class="fas fa-envelope"></i>info@hype-news.com</p>
                     <p><i class="fas fa-phone-alt"></i>+012 345 6789</p>
                 </div>
             </div>
