@@ -21,6 +21,7 @@
 
     <!-- Template Stylesheet -->
     <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('css/style.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('assets/css/pagination.css')}}" />
 
 

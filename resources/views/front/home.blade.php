@@ -11,7 +11,7 @@
                         <div class="col-md-6">
                             <div class="tn-img">
                                 @if($bannerNew->photo)
-                                    <img src="{{ asset('storage/' . $bannerNew->photo) }}" alt="{{ $bannerNew->title }}" />
+                                    <img src="{{ asset('storage/' . $bannerNew->photo) }}" class="leftBannerImage" alt="{{ $bannerNew->title }}" />
                                 @endif
                                 <div class="tn-title">
                                     <a href="{{route('singleNews',  $bannerNew->slug)}}">{{$bannerNew->title}}</a>
@@ -28,7 +28,7 @@
                         <div class="col-md-6">
                             <div class="tn-img">
                                 @if($rightBanner->photo)
-                                    <img src="{{ asset('storage/' . $rightBanner->photo) }}" alt="{{ $rightBanner->title }}" />
+                                    <img src="{{ asset('storage/' . $rightBanner->photo) }}" class="imageRightBanner" alt="{{ $rightBanner->title }}" />
                                 @endif
                                 <div class="tn-title">
                                     <a href="{{route('singleNews',  $rightBanner->slug)}}">{{ $rightBanner->title }}</a>
