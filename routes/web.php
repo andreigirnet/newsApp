@@ -37,7 +37,7 @@ Route::get('/singleCategory/{id}', function ($id) {
    return view('front.category', compact('newsByCategory','category'));
 })->name('byCategory');
 
-Route::get('news/{slug}', function ($slug) {
+Route::get('singleNews/{slug}', function ($slug) {
     $news = News::where('slug', $slug)->first();
     SEOMeta::setTitle($news->title);
     SEOMeta::setDescription($news->title);
