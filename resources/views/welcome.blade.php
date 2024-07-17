@@ -6,6 +6,8 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="News" name="keywords">
     <meta content="News" name="description">
+    <meta name="keywords" content="breaking news, latest news, world news, politics, business, technology, entertainment, sports, health, science, lifestyle, travel, opinion, editorials, local news, global news, news updates, headlines, current events">
+
 
     <!-- Favicon -->
     <link href="{{asset('assets/img/icon.png')}}" rel="icon" type="image/x-icon">
