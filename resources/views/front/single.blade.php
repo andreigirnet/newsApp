@@ -35,7 +35,7 @@
                             @foreach($hotNews as $related)
                             <div class="col-md-4">
                                 <div class="sn-img">
-                                    <img src="{{ asset('storage/' . $related->photo) }}" alt="{{ $related->title }}" />
+                                    <img src="{{ asset('storage/' . $related->photo) }}" class="singleRelatedNewsImage" alt="{{ $related->title }}" />
                                     <div class="sn-title">
                                         <a href="">{{$related->title}}</a>
                                     </div>
