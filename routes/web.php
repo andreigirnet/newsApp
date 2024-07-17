@@ -43,7 +43,7 @@ Route::get('singleNews/{slug}', function ($slug) {
     SEOMeta::setDescription($news->title);
 
     OpenGraph::setTitle($news->title);
-    OpenGraph::setDescription($news->description);
+    OpenGraph::setDescription($news->title);
     OpenGraph::setUrl(route('singleNews', $slug));
     OpenGraph::addProperty('type', 'article');
     OpenGraph::addProperty('article:published_time', $news->created_at->toW3CString());
