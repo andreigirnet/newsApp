@@ -70,7 +70,7 @@ class NewsController extends Controller
         $news->hot_news = (int) $request['hotNews'];
         $news->save();
 
-        $newsUrl = url("/blog/{$news->slug}");
+        $newsUrl = url("/{$news->slug}");
         $newsUrl = str_replace("http://", "https://", $newsUrl);
         $sitemapPath = public_path('sitemap.xml');
 
