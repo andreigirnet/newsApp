@@ -8,7 +8,7 @@
     <meta content="News" name="description">
 
     <!-- Favicon -->
-    <link href="{{asset('assets/img/icon.png')}}" rel="icon">
+    <link href="{{asset('assets/img/icon.png')}}" rel="icon" type="image/x-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
