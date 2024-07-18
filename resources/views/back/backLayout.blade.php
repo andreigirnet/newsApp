@@ -797,16 +797,19 @@
         Bold,
         Italic,
         Font,
-        Paragraph
+        Paragraph,
+        Image,
+        ImageInsert,
+        AutoImage
     } from 'ckeditor5';
 
     ClassicEditor
         .create( document.querySelector( '#editor' ), {
-            plugins: [ Essentials, Bold, Italic, Font, Paragraph ],
+            plugins: [ Essentials, Bold, Italic, Font, Paragraph, Image,  ImageInsert, AutoImage ],
             toolbar: {
                 items: [
                     'undo', 'redo', '|', 'bold', 'italic', '|',
-                    'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor'
+                    'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor', 'insertImage', 'Image', 'AutoImage '
                 ]
             }
         } )
