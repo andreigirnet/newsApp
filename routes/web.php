@@ -14,7 +14,7 @@ use Spatie\Sitemap\SitemapGenerator;
 
 Route::get('/', function () {
     SEOMeta::setTitle('Home');
-    SEOMeta::setDescription('Latest news all over the world');
+    SEOMeta::setDescription('🟠 Latest news all over the world');
     OpenGraph::addImage(config('app.url') . 'assets/img/icon.png');
     $firstBannerNews = News::latest()->take(2)->get();
     $rightBanners = News::latest()->take(4)->get();
@@ -40,10 +40,10 @@ Route::get('/singleCategory/{id}', function ($id) {
 Route::get('singleNews/{slug}', function ($slug) {
     $news = News::where('slug', $slug)->first();
     SEOMeta::setTitle($news->title);
-    SEOMeta::setDescription($news->title);
+    SEOMeta::setDescription('🟠 ' . $news->title);
 
     OpenGraph::setTitle($news->title);
-    OpenGraph::setDescription($news->title);
+    OpenGraph::setDescription('🟠 ' . $news->title);
     OpenGraph::setUrl(route('singleNews', $slug));
     OpenGraph::addProperty('type', 'article');
     OpenGraph::addProperty('article:published_time', $news->created_at->toW3CString());
@@ -58,24 +58,36 @@ Route::get('singleNews/{slug}', function ($slug) {
 })->name('singleNews');
 
 Route::get('/about', function (){
+    SEOMeta::setDescription('🟠 Latest news all over the world');
+    OpenGraph::addImage(config('app.url') . 'assets/img/icon.png');
     return view('front.about');
 })->name('about');
 
 Route::get('/privacy', function (){
+    SEOMeta::setDescription('🟠 Latest news all over the world');
+    OpenGraph::addImage(config('app.url') . 'assets/img/icon.png');
     return view('front.privacy');
 })->name('privacy');
 
 Route::get('/terms', function (){
+    SEOMeta::setDescription('🟠 Latest news all over the world');
+    OpenGraph::addImage(config('app.url') . 'assets/img/icon.png');
     return view('front.terms');
 })->name('terms');
 Route::get('/contact', function (){
+    SEOMeta::setDescription('🟠 Latest news all over the world');
+    OpenGraph::addImage(config('app.url') . 'assets/img/icon.png');
     return view('front.contact');
 })->name('contact');
 
 Route::get('/cookies', function (){
+    SEOMeta::setDescription('🟠 Latest news all over the world');
+    OpenGraph::addImage(config('app.url') . 'assets/img/icon.png');
     return view('front.cookies');
 })->name('cookies');
 Route::get('/adv', function (){
+    SEOMeta::setDescription('🟠 Latest news all over the world');
+    OpenGraph::addImage(config('app.url') . 'assets/img/icon.png');
     return view('front.advertise');
 })->name('adv');
 
