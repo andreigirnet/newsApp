@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Route;
 use Spatie\Sitemap\SitemapGenerator;
 
 Route::get('/', function () {
-    SEOMeta::setTitle('🟠 Hype-News - Latest News All Over The World');
+    SEOMeta::setTitle('Hype-News - Latest News All Over The World');
     SEOMeta::setDescription('🟠 Latest news all over the world');
     OpenGraph::addImage(config('app.url') . 'assets/img/icon.png');
-    OpenGraph::setTitle('🟠 Hype-News - Latest News All Over The World');
+    OpenGraph::setTitle('Hype-News - Latest News All Over The World');
     OpenGraph::setDescription('🟠 Latest news all over the world');
     OpenGraph::setUrl('/');
     OpenGraph::addProperty('type', 'website');
