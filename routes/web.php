@@ -13,9 +13,14 @@ use Illuminate\Support\Facades\Route;
 use Spatie\Sitemap\SitemapGenerator;
 
 Route::get('/', function () {
-    SEOMeta::setTitle('Home');
+    SEOMeta::setTitle('🟠 Hype-News - Latest News All Over The World');
     SEOMeta::setDescription('🟠 Latest news all over the world');
     OpenGraph::addImage(config('app.url') . 'assets/img/icon.png');
+    OpenGraph::setTitle('🟠 Hype-News - Latest News All Over The World');
+    OpenGraph::setDescription('🟠 Latest news all over the world');
+    OpenGraph::setUrl('/');
+    OpenGraph::addProperty('type', 'website');
+
     $firstBannerNews = News::latest()->take(2)->get();
     $rightBanners = News::latest()->take(4)->get();
     $footerNews = News::where('created_at', '>=', Carbon::now()->subWeek())
