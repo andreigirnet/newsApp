@@ -59,7 +59,7 @@
                                         @endif
                                     </div>
                                     <div class="nl-title">
-                                        <a href="{{route('byCategory', $categoryNew->id)}}"> {{\Illuminate\Support\Str::limit($categoryNew->title, 40)}}</a>
+                                        <a href="{{route('singleNews', $categoryNew->slug)}}"> {{\Illuminate\Support\Str::limit($categoryNew->title, 40)}}</a>
                                     </div>
                                 </div>
                                 @endforeach
