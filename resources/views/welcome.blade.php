@@ -38,6 +38,8 @@
 
         gtag('config', 'G-07MX7WJWMP');
     </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9112272212670993"
+            crossorigin="anonymous"></script>
 
 </head>
 
