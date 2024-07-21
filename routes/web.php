@@ -14,10 +14,10 @@ use Spatie\Sitemap\SitemapGenerator;
 
 Route::get('/', function () {
     SEOMeta::setTitle('🟠 ' . 'Hype-News - Latest News All Over The World');
-    SEOMeta::setDescription('🟠 Latest news all over the world');
+    SEOMeta::setDescription('🟠 Hype-News - Latest news all over the world');
     OpenGraph::addImage(config('app.url') . 'assets/img/icon.png');
     OpenGraph::setTitle('🟠 ' . 'Hype-News - Latest News All Over The World');
-    OpenGraph::setDescription('🟠 Latest news all over the world');
+    OpenGraph::setDescription('🟠 Hype-News - Latest news all over the world');
     OpenGraph::setUrl('/');
     OpenGraph::addProperty('type', 'website');
 
@@ -77,11 +77,11 @@ Route::get('/singleCategory/{id}', function ($id) {
 
 Route::get('singleNews/{slug}', function ($slug) {
     $news = News::where('slug', $slug)->first();
-    SEOMeta::setTitle( '🟠 ' . $news->title);
-    SEOMeta::setDescription('🟠 ' . $news->title);
+    SEOMeta::setTitle( '🟠 Hype-News -' . $news->title);
+    SEOMeta::setDescription('🟠 Hype-News -' . $news->title);
 
-    OpenGraph::setTitle( '🟠 ' . $news->title);
-    OpenGraph::setDescription('🟠 ' . $news->title);
+    OpenGraph::setTitle( '🟠 Hype-News -' . $news->title);
+    OpenGraph::setDescription('🟠 Hype-News - ' . $news->title);
     OpenGraph::setUrl(route('singleNews', $slug));
     OpenGraph::addProperty('type', 'article');
     OpenGraph::addProperty('article:published_time', $news->created_at->toW3CString());
@@ -96,35 +96,35 @@ Route::get('singleNews/{slug}', function ($slug) {
 })->name('singleNews');
 
 Route::get('/about', function (){
-    SEOMeta::setDescription('🟠 Latest news all over the world');
+    SEOMeta::setDescription('🟠 Hype-News - Latest news all over the world');
     OpenGraph::addImage(config('app.url') . 'assets/img/icon.png');
     return view('front.about');
 })->name('about');
 
 Route::get('/privacy', function (){
-    SEOMeta::setDescription('🟠 Latest news all over the world');
+    SEOMeta::setDescription('🟠 Hype-News - Latest news all over the world');
     OpenGraph::addImage(config('app.url') . 'assets/img/icon.png');
     return view('front.privacy');
 })->name('privacy');
 
 Route::get('/terms', function (){
-    SEOMeta::setDescription('🟠 Latest news all over the world');
+    SEOMeta::setDescription('🟠 Hype-News - Latest news all over the world');
     OpenGraph::addImage(config('app.url') . 'assets/img/icon.png');
     return view('front.terms');
 })->name('terms');
 Route::get('/contact', function (){
-    SEOMeta::setDescription('🟠 Latest news all over the world');
+    SEOMeta::setDescription('🟠 Hype-News - Latest news all over the world');
     OpenGraph::addImage(config('app.url') . 'assets/img/icon.png');
     return view('front.contact');
 })->name('contact');
 
 Route::get('/cookies', function (){
-    SEOMeta::setDescription('🟠 Latest news all over the world');
+    SEOMeta::setDescription('🟠 Hype-News - Latest news all over the world');
     OpenGraph::addImage(config('app.url') . 'assets/img/icon.png');
     return view('front.cookies');
 })->name('cookies');
 Route::get('/adv', function (){
-    SEOMeta::setDescription('🟠 Latest news all over the world');
+    SEOMeta::setDescription('🟠 Hype-News - Latest news all over the world');
     OpenGraph::addImage(config('app.url') . 'assets/img/icon.png');
     return view('front.advertise');
 })->name('adv');
