@@ -58,6 +58,7 @@
 
 <!-- Template Javascript -->
 <script src="{{asset('assets/js/main.js')}}"></script>
+<script src="{{asset('/js/ytJs.js')}}"></script>
 
 
 </body>

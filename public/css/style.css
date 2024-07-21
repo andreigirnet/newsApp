@@ -13,3 +13,38 @@
 .singleRelatedNewsImage{
     height: 150px;
 }
+.ytCalc {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 500px;
+    margin: 50px 0px;
+}
+.ytCalc img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+.h1-yt {
+    color: #ff6f61;
+    margin-bottom: 20px;
+}
+.label-yt {
+    display: block;
+    margin: 15px 0 5px;
+    color: #333;
+}
+.input-yt {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.result-yt {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}

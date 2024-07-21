@@ -34,6 +34,28 @@ Route::get('/', function () {
     return view('front.home', compact('firstBannerNews', 'rightBanners', 'sports', 'politics', 'socials', 'militars', 'footerNews'));
 });
 
+Route::get('/tools', function () {
+    SEOMeta::setTitle('🟠 ' . 'Hype-Tools - Latest Online Tools');
+    SEOMeta::setDescription('🟠 Hype-Tools - Latest Online Tools');
+    OpenGraph::addImage(config('app.url') . 'assets/img/icon.png');
+    OpenGraph::setTitle('🟠 ' . 'Hype-Tools - Latest Online Tools');
+    OpenGraph::setDescription('🟠 Hype-Tools - Latest Online Tools');
+    OpenGraph::setUrl('/tools');
+
+    return view('front.tools');
+});
+
+Route::get('/youtube-shorts-revenue-calculator', function () {
+    SEOMeta::setTitle('🟠 ' . 'Hype-Tools - Youtube Shorts & Youtube Long Revenue Calculator');
+    SEOMeta::setDescription('🟠 Hype-Tools - Youtube Shorts & Youtube Long Revenue Calculator');
+    OpenGraph::addImage(config('app.url') . 'assets/img/icon.png');
+    OpenGraph::setTitle('🟠 ' . 'Hype-Tools - Youtube Shorts & Youtube Long Revenue Calculator');
+    OpenGraph::setDescription('🟠 Hype-Tools - Youtube Shorts & Youtube Long Revenue Calculator');
+    OpenGraph::setUrl('/tools');
+
+    return view('front.youtubeCalculator');
+})->name('ytCalc');
+
 Route::get('/singleCategory/{id}', function ($id) {
    $newsByCategory = News::where('category_id', $id)->latest()->paginate(10);
    $category = Category::find($id);
