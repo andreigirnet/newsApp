@@ -815,7 +815,7 @@
             },
             simpleUpload: {
                 // The URL that the images are uploaded to.
-                uploadUrl: 'https://www.hype-news.eu/',
+                uploadUrl: 'https://www.hype-news.eu/news/create',
 
                 // Enable the XMLHttpRequest.withCredentials property.
                 withCredentials: true,
