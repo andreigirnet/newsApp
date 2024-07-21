@@ -73,6 +73,7 @@
                     <a href="{{route('byCategory', 5)}}" class="nav-item nav-link">Elections</a>
                     <a href="{{route('byCategory', 4)}}" class="nav-item nav-link">Sports</a>
                     <a href="{{route('byCategory', 6)}}" class="nav-item nav-link">Tops</a>
+                    <a href="/tools" class="nav-item nav-link">Tools</a>
                 </div>
                 <div class="social ml-auto">
 {{--                    <a href=""><i class="fab fa-twitter"></i></a>--}}
