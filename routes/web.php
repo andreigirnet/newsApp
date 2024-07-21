@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Route;
 use Spatie\Sitemap\SitemapGenerator;
 
 Route::get('/', function () {
-    SEOMeta::setTitle('Hype-News - Latest News All Over The World');
+    SEOMeta::setTitle('🟠 ' . 'Hype-News - Latest News All Over The World');
     SEOMeta::setDescription('🟠 Latest news all over the world');
     OpenGraph::addImage(config('app.url') . 'assets/img/icon.png');
-    OpenGraph::setTitle('Hype-News - Latest News All Over The World');
+    OpenGraph::setTitle('🟠 ' . 'Hype-News - Latest News All Over The World');
     OpenGraph::setDescription('🟠 Latest news all over the world');
     OpenGraph::setUrl('/');
     OpenGraph::addProperty('type', 'website');
@@ -44,10 +44,10 @@ Route::get('/singleCategory/{id}', function ($id) {
 
 Route::get('singleNews/{slug}', function ($slug) {
     $news = News::where('slug', $slug)->first();
-    SEOMeta::setTitle($news->title);
+    SEOMeta::setTitle( '🟠 ' . $news->title);
     SEOMeta::setDescription('🟠 ' . $news->title);
 
-    OpenGraph::setTitle($news->title);
+    OpenGraph::setTitle( '🟠 ' . $news->title);
     OpenGraph::setDescription('🟠 ' . $news->title);
     OpenGraph::setUrl(route('singleNews', $slug));
     OpenGraph::addProperty('type', 'article');
