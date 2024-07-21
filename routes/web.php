@@ -57,11 +57,11 @@ Route::get('/youtube-shorts-revenue-calculator', function () {
 })->name('ytCalc');
 
 Route::get('/fitness-calories-calculator', function () {
-    SEOMeta::setTitle('🟠 ' . 'Hype-Tools - Fitness Calorie Calculator');
-    SEOMeta::setDescription('🟠 Hype-Tools - Fitness Calorie Calculator');
+    SEOMeta::setTitle('🟠 ' . 'Hype-Tools - Fitness Calories Calculator');
+    SEOMeta::setDescription('🟠 Hype-Tools - Fitness Calories Calculator');
     OpenGraph::addImage(config('app.url') . 'assets/img/icon.png');
-    OpenGraph::setTitle('🟠 ' . 'Hype-Tools - Fitness Calorie Calculator');
-    OpenGraph::setDescription('🟠 Hype-Tools - Fitness Calorie Calculator');
+    OpenGraph::setTitle('🟠 ' . 'Hype-Tools - Fitness Calories Calculator');
+    OpenGraph::setDescription('🟠 Hype-Tools - Fitness Calories Calculator');
     OpenGraph::setUrl('/tools');
 
     return view('front.calorieCalc');
