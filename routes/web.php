@@ -56,6 +56,17 @@ Route::get('/youtube-shorts-revenue-calculator', function () {
     return view('front.youtubeCalculator');
 })->name('ytCalc');
 
+Route::get('/fitness-calories-calculator', function () {
+    SEOMeta::setTitle('🟠 ' . 'Hype-Tools - Fitness Calorie Calculator');
+    SEOMeta::setDescription('🟠 Hype-Tools - Fitness Calorie Calculator');
+    OpenGraph::addImage(config('app.url') . 'assets/img/icon.png');
+    OpenGraph::setTitle('🟠 ' . 'Hype-Tools - Fitness Calorie Calculator');
+    OpenGraph::setDescription('🟠 Hype-Tools - Fitness Calorie Calculator');
+    OpenGraph::setUrl('/tools');
+
+    return view('front.calorieCalc');
+})->name('calorie');
+
 Route::get('/singleCategory/{id}', function ($id) {
    $newsByCategory = News::where('category_id', $id)->latest()->paginate(10);
    $category = Category::find($id);

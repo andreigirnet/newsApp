@@ -48,3 +48,43 @@
     font-size: 1.2em;
     color: #333;
 }
+
+.calorieCalc {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px 0px;
+}
+
+.h1-calorie {
+    color: #ff6f61; /* Title color */
+}
+
+.label-calorie {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.input-calorie {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.select-calorie {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.result-calorie {
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+}
