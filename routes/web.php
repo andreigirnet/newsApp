@@ -9,7 +9,9 @@ use Artesaos\SEOTools\Facades\JsonLd;
 use Artesaos\SEOTools\Facades\OpenGraph;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Carbon\Carbon;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Storage;
 use Spatie\Sitemap\SitemapGenerator;
 
 Route::get('/', function () {
@@ -143,6 +145,7 @@ Route::get('/generate-sitemap', function () {
 Route::get('/dashboard', function () {
     return view('back.dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
 
 
 
