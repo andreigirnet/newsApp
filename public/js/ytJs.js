@@ -1,6 +1,6 @@
 function calculateRevenue() {
-    const shortRate = 0.01; // 0.1 cents per 1000 views
-    const longRate = 1; // 1 dollar per 1000 views
+    const shortRate = 0.04; // 0.1 cents per 1000 views
+    const longRate = 1.5; // 1 dollar per 1000 views
 
     let shortViews = document.getElementById('shortViews').value;
     let longViews = document.getElementById('longViews').value;
