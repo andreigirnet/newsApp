@@ -801,12 +801,14 @@
         Image,
         ImageInsert,
         AutoImage,
-        SimpleUploadAdapter
+        SimpleUploadAdapter,
+        AutoLink,
+        Link
     } from 'ckeditor5';
 
     ClassicEditor
         .create( document.querySelector( '#editor' ), {
-            plugins: [ SimpleUploadAdapter, Essentials, Bold, Italic, Font, Paragraph, Image,  ImageInsert, AutoImage ],
+            plugins: [ SimpleUploadAdapter, Essentials, Bold, Italic, Font, Paragraph, Image,  ImageInsert, AutoImage, Link, AutoLink],
             toolbar: {
                 items: [
                     'undo', 'redo', '|', 'bold', 'italic', '|',
