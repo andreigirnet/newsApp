@@ -131,6 +131,21 @@ Route::get('/adv', function (){
     return view('front.advertise');
 })->name('adv');
 
+Route::post('/uploadImageTextarea', function (Request $request){
+    if ($request->hasFile('upload')) {
+        $originName = $request->file('upload')->getClientOriginalName();
+        $fileName = pathinfo($originName, PATHINFO_FILENAME);
+        $extension = $request->file('upload')->getClientOriginalExtension();
+        $fileName = $fileName . '_' . time() . '.' . $extension;
+
+        $request->file('upload')->move(public_path('images'), $fileName);
+
+        $url = asset('images/' . $fileName);
+        return response()->json(['fileName' => $fileName, 'uploaded' => 1, 'url' => $url]);
+    }
+    return response()->json(['message' => 'error']);
+})->name('uploadImageTextarea');
+
 Route::get('/generate-sitemap', function () {
     // Define the path where the sitemap will be saved
     $path = public_path('sitemap.xml');

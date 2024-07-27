@@ -802,18 +802,23 @@
         ImageInsert,
         AutoImage,
         AutoLink,
-        Link
+        Link,
+        CKFinder,
+        CKFinderUploadAdapter
     } from 'ckeditor5';
 
     ClassicEditor
         .create( document.querySelector( '#editor' ), {
-            plugins: [ Essentials, Bold, Italic, Font, Paragraph, Image,  ImageInsert, AutoImage, Link, AutoLink],
+            plugins: [ Essentials, Bold, Italic, Font, Paragraph, Image,  ImageInsert, AutoImage, Link, AutoLink, CKFinder, CKFinderUploadAdapter],
             toolbar: {
                 items: [
                     'undo', 'redo', '|', 'bold', 'italic', '|',
-                    'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor', 'insertImage', 'Image', 'AutoImage ', 'link'
+                    'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor', 'insertImage', 'Image', 'AutoImage ', 'link', 'ckfinder', 'uploadImage'
                 ]
             },
+            ckfinder: {
+                uploadUrl:"{{route('uploadImageTextarea', ['_token'=> csrf_token()])}}"
+            }
         } )
         .then( /* ... */ )
         .catch( /* ... */ );
